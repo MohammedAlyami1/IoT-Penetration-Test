@@ -14,7 +14,7 @@ This repository contains security research tools for testing IoT devices. These 
 
 ## 📋 Table of Contents
 
-1. [Drone Control Scripts](#drone-control-scripts)
+1. [Drone Control Scripts](#Drone.py)
 2. [ESP32 IoT Testing](#esp32-iot-testing)
 3. [IP Camera Security Tools](#ip-camera-security-tools)
 4. [Requirements](#requirements)
