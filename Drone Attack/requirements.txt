@@ -1,0 +1,24 @@
+# Drone Attack Module - Python Dependencies
+
+# Core dependencies
+pynput>=1.7.6          # Keyboard input capture and control
+scapy>=2.5.0           # Packet manipulation and injection
+
+# Optional dependencies (for development)
+# python-iptables>=1.0.0  # For advanced firewall rules
+# netifaces>=0.11.0       # Network interface enumeration
+
+# System Requirements:
+# - Python 3.6 or higher
+# - Linux OS (for monitor mode support)
+# - Root privileges (for Drone_injection.py)
+# - Wireless adapter with monitor mode capability
+
+# Installation:
+# pip install -r requirements.txt
+
+# For packet injection capabilities:
+# sudo apt-get install aircrack-ng  # Airmon-ng, Airodump-ng, Aireplay-ng
+# sudo apt-get install wireless-tools  # iwconfig, iwlist
+
+# Note: Some features require system-level tools not installable via pip
