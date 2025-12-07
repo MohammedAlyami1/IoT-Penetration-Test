@@ -13,7 +13,7 @@ INTERFACE = "wlan1mon"
 # We will spoof this client MAC. 
 # If a phone is connected, use the PHONE'S MAC to hijack the session.
 # If no phone is connected, you can use a random MAC.
-SPOOFED_CLIENT_MAC = "EA:9C:F0:89:44:15"
+SPOOFED_CLIENT_MAC = "XX:XX:XX:XX:XX:XX"
 
 # --- CONSTANTS ---
 DRONE_IP = "192.168.1.1"
