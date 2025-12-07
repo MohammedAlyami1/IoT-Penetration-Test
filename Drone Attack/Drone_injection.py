@@ -18,7 +18,7 @@ class E88ScapyController:
     def __init__(self, 
                  drone_mac="08:17:91:4B:8C:64",
                  interface="wlan0",
-                 spoofed_client_mac="EA:9C:F0:89:44:15",
+                 spoofed_client_mac="XX:XX:XX:XX:XX:XX",
                  drone_ip="192.168.1.1",
                  spoofed_ip="192.168.1.100",
                  control_port=7099):
@@ -433,7 +433,7 @@ if __name__ == "__main__":
     # Configuration (edit these values)
     DRONE_MAC = "08:17:91:4B:8C:64"  # CHANGE THIS
     INTERFACE = "wlan0"            # CHANGE THIS
-    SPOOFED_CLIENT_MAC = "EA:9C:F0:89:44:15"  # CHANGE THIS
+    SPOOFED_CLIENT_MAC = "XX:XX:XX:XX:XX:XX"  # CHANGE THIS
     
     print("\n[?] Current Configuration:")
     print(f"    Drone MAC: {DRONE_MAC}")
@@ -470,3 +470,4 @@ if __name__ == "__main__":
         traceback.print_exc()
     finally:
         print("\n[✓] Program terminated")
+
