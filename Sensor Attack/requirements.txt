@@ -1,0 +1,44 @@
+# IoT Sensor Attack Module - Python Dependencies
+
+# Core dependencies
+# Note: Reply.py uses only Python standard library (socket, time)
+# No external dependencies required for basic functionality
+
+# Optional dependencies for advanced features
+scapy>=2.5.0           # For packet analysis and replay attacks
+
+# System Tools Required (not installable via pip):
+# - ettercap-graphical   # For ARP spoofing and MITM attacks
+# - wireshark            # For packet capture and analysis
+# - netdiscover          # For network reconnaissance
+# - aircrack-ng          # For deauthentication attacks (aireplay-ng)
+
+# Installation commands for system tools (Debian/Ubuntu):
+# sudo apt-get update
+# sudo apt-get install -y ettercap-graphical wireshark netdiscover aircrack-ng
+
+# Installation commands for system tools (Kali Linux):
+# These tools are pre-installed on Kali Linux
+
+# Python Requirements:
+# - Python 3.6 or higher
+# - No special privileges needed for Reply.py
+# - Root/sudo privileges required for:
+#   * ettercap
+#   * wireshark (packet capture)
+#   * netdiscover
+#   * aireplay-ng
+
+# Optional: For automated attack scripts
+# requests>=2.28.0      # If making HTTP requests
+# paho-mqtt>=1.6.0      # If interacting with MQTT brokers
+
+# Installation:
+# pip install -r requirements.txt
+
+# Verify installation:
+# python3 -c "import socket; print('✓ Standard library ready')"
+# ettercap --version
+# wireshark --version
+# netdiscover --help
+# aireplay-ng --help
