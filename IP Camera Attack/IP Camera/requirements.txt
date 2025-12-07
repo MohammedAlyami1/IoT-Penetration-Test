@@ -1,0 +1,57 @@
+# IP Camera Attack Module - Python Dependencies
+
+# Core ONVIF library
+onvif-zeep>=0.2.12         # ONVIF protocol implementation
+zeep>=4.2.1                # SOAP client (onvif dependency)
+
+# Optional: For advanced features
+requests>=2.28.0           # HTTP requests (if needed)
+lxml>=4.9.0               # XML processing (zeep dependency)
+
+# System Tools Required (not installable via pip):
+# - aircrack-ng suite       # For WPA2 cracking
+#   * airmon-ng             # Monitor mode
+#   * airodump-ng           # Packet capture
+#   * aireplay-ng           # Deauth attacks
+#   * aircrack-ng           # Password cracking
+# - nmap                    # Network discovery
+# - wireshark/tshark        # Packet analysis
+# - ffmpeg/ffplay           # RTSP stream viewing
+# - hydra                   # Brute force tool (optional)
+
+# Installation commands for system tools (Debian/Ubuntu):
+# sudo apt-get update
+# sudo apt-get install -y aircrack-ng nmap wireshark-qt tshark ffmpeg hydra
+
+# Installation commands for system tools (Kali Linux):
+# These tools are pre-installed on Kali Linux
+
+# Python Requirements:
+# - Python 3.6 or higher
+# - No special privileges needed for ONVIF scripts
+# - Root/sudo privileges required for:
+#   * airmon-ng, airodump-ng, aireplay-ng (wireless attacks)
+#   * nmap (some scan types)
+#   * wireshark (packet capture)
+
+# Installation:
+# pip install -r requirements.txt
+
+# Verify ONVIF library installation:
+# python3 -c "from onvif import ONVIFCamera; print('✓ ONVIF library ready')"
+
+# Common Issues:
+# 1. If zeep fails to install, try:
+#    pip install --upgrade pip setuptools wheel
+#    pip install zeep
+# 
+# 2. For SSL certificate errors:
+#    pip install certifi
+#
+# 3. If lxml fails (missing dependencies):
+#    sudo apt-get install libxml2-dev libxslt1-dev python3-dev
+
+# Development dependencies (optional):
+# pytest>=7.0.0             # For testing
+# pylint>=2.0.0             # Code quality
+# black>=22.0.0             # Code formatting
